@@ -11,14 +11,14 @@ h2 {
     color: darkred;
 }
 
-h3, 
+h3,
 p,
 li {
     color: green;
 }
 
 img {
-    width: 100%;
+    width: 50%;
     height: auto;
     max-width: 100%;
 }
@@ -39,13 +39,15 @@ nav ul {
 
 nav li {
     display: inline;
+    float: center;
 }
 
 nav a {
     text-decoration: none;
     font-size: 1.6em;
     color: green;
-    margin-right: 25px;
+    padding: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 nav a:hover {
@@ -53,7 +55,7 @@ nav a:hover {
 }
 
 #banner {
-    width: 100%;
+    width: 30%;
     height: auto;
     background-color: white;
 }
@@ -78,9 +80,61 @@ table {
     border: 3px solid black;
     width: 100%;
 }
-  
+
 td,
 th {
     border: 1px solid black;
     padding: 5px;
+}
+
+#store-locations {
+    list-style-type: none;
+}
+
+#store-locations li {
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#noodle-mail {
+    text-decoration: none;
+    color: inherit;
+}
+
+#current-page {
+    background-color: darkred;
+    padding: 5px;
+    border-style: solid;
+}
+
+#current-text {
+    color: white !important;
+}
+
+/* Style the header */
+.banner {
+    padding: 1px;
+    background: #555;
+    color: #f1f1f1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.content {
+    padding: 16px;
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky+.content {
+    padding-top: 102px;
 }
